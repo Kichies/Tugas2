@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class data {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang sisi A: ");
+        double ankA = input.nextDouble();
+        
+        
+         System.out.print("Masukkan panjang sisi B: ");
+        double ankB = input.nextDouble();
+        
+        //Mencari angka C dengan Rumus Phtagoras
+        double ankC = Math.sqrt((ankA * ankA) + (ankB * ankB));
+        System.out.println("Panjang sisi C adalah: " + ankC);
+        
+        input.close();
+        
+            
+            }
+}
